@@ -39,7 +39,7 @@ export class FormUserDetails extends Component {
             <RaisedButton 
                 label="Continue"
                 primary={true}
-                style={StyleSheet.button}
+                style={styles.button}
                 onClick={this.continue}
             />
         </React.Fragment>
