@@ -51,6 +51,7 @@ export class UserForm extends Component {
                     nextStep={this.nextStep}
                     handleChange={this.handleChange}
                     values={values}
+                    styles={styles}
                 />
             )
         case 2:
@@ -59,12 +60,14 @@ export class UserForm extends Component {
             prevStep={this.prevStep}
             handleChange={this.handleChange}
             values={values}
+            styles={styles}
             />
         case 3:
             return <Confirm 
             nextStep={this.nextStep}
             prevStep={this.prevStep}
             values={values}
+            styles={styles}
             />
         case 4:
             return <Success />
@@ -72,4 +75,9 @@ export class UserForm extends Component {
   }
 }
 
+const styles = {
+    button: {
+        margin: 15
+    }
+}
 export default UserForm

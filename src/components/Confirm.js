@@ -16,7 +16,7 @@ export class Confirm extends Component {
     };
   render() {
     const { values: { firstName, lastName, email,
-    occupation, city, bio } } = this.props;
+    occupation, city, bio }, styles } = this.props;
     return (
       <MuiThemeProvider>
         <React.Fragment>
@@ -64,12 +64,6 @@ export class Confirm extends Component {
       </MuiThemeProvider>
     );
   }
-}
-
-const styles = {
-    button: {
-        margin: 15
-    }
 }
 
 export default Confirm
