@@ -44,7 +44,7 @@ export class FormUserDetails extends Component {
             />
         </React.Fragment>
       </MuiThemeProvider>
-    )
+    );
   }
 }
 
